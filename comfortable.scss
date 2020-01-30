@@ -12,7 +12,7 @@ $theme-colors: (
 $body-bg: #fff5e6;
 $body-color: #301700;
 $light: #fff5e6;
-$input-color: #ffffff;
+$input-color: #301700;
 $table-bg: #fff5e6;
 $table-hover-bg: #301700;
 $nav-pills-link-active-color: #ffffff;
@@ -26,6 +26,15 @@ $font-size: 1rem;
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 @import "./node_modules/bootstrap/scss/functions";
+
+.btn:focus,
+.btn:active,
+.close:focus,
+.close:active {
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: !important;
+}
 
 .well,
 .card-header {
@@ -41,6 +50,7 @@ $font-size: 1rem;
 .form-control {
     border: $border;
     color: $black;
+    background-color: $white;
 }
 
 .input-lg {
@@ -54,6 +64,7 @@ $font-size: 1rem;
 .nav-pills > li.active > a {
     color: $nav-pills-link-active-color;
     background-color: $nav-pills-link-active-bg;
+    border-radius: 0.25rem;
 }
 
 .breadcrumb a,
@@ -175,7 +186,7 @@ option:hover {
 .nav-tabs .nav-link.active {
     font-style: normal;
     font-weight: 500;
-    font-size: calc(1rem + 0.5rem);
+    font-size: 1rem;
     color: $black;
     border-color: transparent;
     border-bottom: $border;
@@ -344,4 +355,14 @@ option:hover {
 
 .page-link {
     border: $border;
+}
+
+.page-link:hover {
+    cursor: pointer;
+    background-color: $black;
+    border: $border;
+}
+
+.page-item:hover {
+    color: $white;
 }
