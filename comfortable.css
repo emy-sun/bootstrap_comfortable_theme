@@ -7709,7 +7709,8 @@ th {
 
 option:checked,
 option:hover {
-  background: white; }
+  background: #fff5e6;
+  color: #fff5e6; }
 
 .nav-tabs {
   border-bottom: none; }
@@ -7864,5 +7865,14 @@ option:hover {
 
 .page-item:hover {
   color: #fff5e6; }
+
+select option:hover,
+select option:focus,
+select option:active,
+select option:checked {
+  color: white !important;
+  background: linear-gradient(#301700, #301700);
+  background-color: #301700 !important;
+  -webkit-text-fill-color: #fff5e6; }
 
 /*# sourceMappingURL=comfortable.css.map */
